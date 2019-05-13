@@ -4,7 +4,7 @@ Esta é uma maneira prática(pra não falar ágil, rs) de instalar/remover o Zab
 
 ## Intruções Iniciais
 
-Acessar o Servidor ARG-VLCEANSIBLE via SSH e entrar no diretório onde está o projeto(`/etc/ansible/agzbxce7/`).
+Acessar o Servidor com o Ansible instalado via SSH e entrar no diretório onde está o projeto(`/etc/ansible/agzbxce7/`).
 
 **OBS**: Não esqueça de checar se a porta 10050 está aberta no Host de destino, pois o Zabbix Server irá acessar por esta porta.
 
@@ -15,7 +15,7 @@ Acessar o Servidor ARG-VLCEANSIBLE via SSH e entrar no diretório onde está o p
 
 Permitir o acesso SSH para que o Ansible consiga efetuar a operação, enviando a chave pública do Host Ansible para Host de destino e inserir o IP ou nome do Host no playbook, os passos são:
 
-1. Executar o comando no ARG-VLCEANSIBLE `ssh-copy-id root@iphostdestino`;
+1. Executar o comando no Servidor do Ansible `ssh-copy-id root@iphostdestino`;
 2. Editar o playbook `install.yml` e no campo hosts inserir o IP ou nome do host de destino;
 3. Não esqueça de inserir o IP do host de destino dentro do hosts do Ansible, em `/etc/ansible/hosts` para fazer com que o playbook funcione com sucesso.
 
