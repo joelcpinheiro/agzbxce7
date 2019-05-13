@@ -51,4 +51,4 @@ $ ansible-playbook uninstall.yml
 
 ## License
 
-Use na MOB e onde achar que irá contribuir :)
+Use onde achar que irá contribuir :)

@@ -1,0 +1,12 @@
+---
+# Inserir no campo hosts o IP ou nome da nova VM PABX VIRTUAL
+- hosts: 192.168.50.90
+  tasks: 
+  - name: Efetuando a remoção do .rpm do Zabbix Agent Versão 4.0 LTS
+    command: rpm -e zabbix-release
+  - name: Removendo o Zabbix Agent 4.0 LTS
+    yum:
+     name: zabbix-agent
+     state: removed
+  - name: Removendo arquivos de configuracao padrao
+    command: rm -rf /etc/zabbix
