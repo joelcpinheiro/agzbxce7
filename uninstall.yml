@@ -1,6 +1,6 @@
 ---
-# Inserir no campo hosts o IP ou nome da nova VM PABX VIRTUAL
-- hosts: 192.168.0.5
+# Inserir no campo hosts o IP ou nome da nova VM
+- hosts: 192.168.0.3
   tasks: 
   - name: Efetuando a remoção do .rpm do Zabbix Agent Versão 4.0 LTS
     command: rpm -e zabbix-release
